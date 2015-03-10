@@ -9,19 +9,18 @@ kramdown:
 author: 
   name: 凨
   email: liyunf81@hotmail.com
-  link: http://yansu.org
   weibo: http://weibo.com/2163612074/
   github: https://github.com/liyunf81
 
 # 站点信息
 title: 凨 
 description: 凨的地盘
-url: http://yansu.org
+url: http://liyunf81.github.io
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: 7x2xd3.com1.z0.glb.clouddn.com/my.jpg
-favicon: 7x2xd3.com1.z0.glb.clouddn.com/favicon.ico
+avatar: http://7x2xd3.com1.z0.glb.clouddn.com/my.jpg
+favicon: http://7x2xd3.com1.z0.glb.clouddn.com/favicon.ico
 
 # google analytics 设置
 ga:
