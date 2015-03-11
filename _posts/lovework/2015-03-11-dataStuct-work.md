@@ -38,7 +38,7 @@ C#项目中数据类型的选择
 |double              |System.Double          |小树点进度为15到16 |±5.0 × 10-324 到 ±1.7 × 10308        |
 >说明:double 数据类型的精度是float数据类型精度的2倍左右.如果在代码中没有对浮点型数据进行硬编码(12.3)则
  编译器默认此数据为double类型.如果想要使其为float则可以在数据后面加上f或者F
-  ```C#
+  ```
   float f = 12.5f;
   ```
 
@@ -48,7 +48,7 @@ C#项目中数据类型的选择
 |decimal             |System.Decimal         |128位高进度10进制表示法 |±1.5 × 10-45 到 ±3.4 × 1038          |
 >说明:decimal类型专用于进行财务类计算或者一些复杂的涉及到进度非常高的数学计算.
  要把一个数据定义为decimal类型，需要在数字后面添加字符M或者m 如:
- ```C#
+ ```
  decimal d = 211.55m;
  ```
 
@@ -98,7 +98,7 @@ ValueType作为其子类不是应该也是么。因为C#重载了Equals()方法�
 
 
 怎么判断一个类型是值类型呢？用Type.IsValueType.
-```C#
+```
 Type aType = new Type();
 if(aType.GetType().IsValueType)
 {
@@ -114,13 +114,13 @@ if(aType.GetType().IsValueType)
 #### 6.3、值类型和引用类型在内存中的部署
 MSDN上说:托管堆上部署了所有引用类型.
 
-```C#
+```
 object refernce = new object();
 ```
 new 操作符将在托管对上创建一个内存，并分配其内存地址。reference在栈上保存着这个地址。在次reference相当于C语言中的指针.
 
 ##### 6.3.1、数组
-```C#
+```
 int[] reference = new int[100];
 ```
 根据前面所说，数组属于引用类型，而int则为数值类型。
@@ -129,7 +129,7 @@ int[] reference = new int[100];
 
 如果我们用windg查看reference[i]在内存中的具体位置，那么就会发现他们都存储在堆中。
 
-```C#
+```
 Type[] array = new Type[100];
 ```
 如果Type是值类型，则会一次性在托管堆中分配空间，并给其所有元素初始化。
@@ -142,7 +142,7 @@ Type[] array = new Type[100];
 
 计入数值类型包括了引用类型，那么这个变量应该存放在什么地方呢？这个变量的各个组成部分又应该放在什么地方呢？
 
-```C#
+```
 public class ReferenceTypeClass
 {
     private int _valueTypeFiled; //值类型
@@ -194,9 +194,11 @@ valueTypeInstance 为一个结构体，按照常理应该保存在栈中，那�
 确保线程安全，引用多个线程同时访问时都是同样地内容。
 
  2.具有原子性:我们通常会直接替换一个原子型的整个类容.
+ 
  下面有一个例子
+ 
 
- ```C#
+ ```
  public struct Address
  {
     private string _city;
@@ -236,7 +238,7 @@ valueTypeInstance 为一个结构体，按照常理应该保存在栈中，那�
  如果一个多线程程序，在更改City的过程中，另外一个线程可能得到不一致的数据视图。
  将Address改为常量类型
 
- ```C#
+ ```
  public struct Address
  {
     private string _city;
@@ -268,6 +270,7 @@ valueTypeInstance 为一个结构体，按照常理应该保存在栈中，那�
  //如果此时需要更改address，那么就不能修改现有实例了，必须创建一个新的实例
  Address address = new Address("Chengdu","Sichuan",610000);
  address = new Address("Nanjing","Jiangsu",210000);
+ ```
 
  此时Address将不会存在线程安全性问题。
  
@@ -277,13 +280,14 @@ valueTypeInstance 为一个结构体，按照常理应该保存在栈中，那�
 
 ##### 6.3.5 尽量减少装箱和拆箱操作
 装箱是指一个值类型放入一个未具名类型的引用类型中，如：
-```C#
+
+```
 int valueType = 0;
 object refenceType = valueType;
 ```
 
 拆箱是指从前面的装箱对象中取出值类型:
-```C#
+```
 object refenceType;
 int valueType = (int)refenceType;
 ```
