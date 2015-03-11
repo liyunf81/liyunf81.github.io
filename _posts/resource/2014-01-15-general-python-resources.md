@@ -11,7 +11,7 @@ description:
 
 ### 遍历对象
     for key in a.__dict__:
-        print key,':',a.__dict__[key]
+       print key,':',a.__dict__[key]
 
 ### 调试方法
     assert False   //引发异常，观察错误界面
