@@ -14,7 +14,8 @@ C# 集合选择
 非线性集合是指元素具有多个前驱或者后继的数据结构。
 
 而C#的集合也可以通过此来进行区分看下图
-![集合图] (http://7x2xd3.com1.z0.glb.clouddn.com/AllDataContinary.png)
+
+![Continary](http://7x2xd3.com1.z0.glb.clouddn.com/AllDataContinary.png)
 
 线性集合按存储方式，又分为直接存储和顺序存储。
 直接存储是指：该类型集合的数据元素可以直接通过下标来访问。C#中有Array,List,String
