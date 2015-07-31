@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-<title>欢迎 | 凨</title>
+<title>耶鲁大学公开课：博弈论，导论笔记 | 凨</title>
 <meta name="author" content="凨">
 
+  <meta name="keywords" content="公开课，导论，博弈论">
 
+
+
+  <meta name="description " content="观看公开课笔记">
 
 
 <link rel="shortcut icon" href="http://7x2xd3.com1.z0.glb.clouddn.com/favicon.ico" />
@@ -80,29 +84,77 @@
     <div id="post">
       <div id="pjax">
         <article id="post__content">
-  <h1 id="post__title" data-identifier="">欢迎</h1>
-  <p><img src="http://7x2xd3.com1.z0.glb.clouddn.com/back.jpg" alt="背景" /><br />
-## 简介<br />
-随着年龄的增加，阅历，感悟也在慢慢提升。曾经数次有想法写一个Bolg，可是却都搁浅了。这次<br />
-却借着失恋，突然想通了很多，于是此博客应运而生。</p>
+  <h1 id="post__title" data-identifier="20150313">耶鲁大学公开课：博弈论，导论笔记</h1>
+  <p>什么是博弈论？<br />博弈论是研究策略形势，那么什么是策略形势呢？<br />
+策略形势就是不完全竞争。其书面定义是行为影响结果，然而结果不仅<br />
+取决于你的行为，还取决于其他人的行为。<br />博弈论适用于经济学,<br />
+也适用于政治学,法学，生物学，体育,etc.</p>
 
-<p>我只想把自己在生活中的摸爬滚打，工作的一点点经验，或者一个小小的学习笔记，都放在上面。<br />
-它们都是我生活中的组成部分。这个博客也许算得上是自己的一个寄托，也许还可以说是一种对生活<br />
-的记录。</p>
+<p>游戏1是一个非常简单的成绩博弈</p>
 
-<p>我将把博客分为技术，生活，旅游，读书，资源。这样方便管理，也方便我自己记录。</p>
+<blockquote>
+  <p>请阅读一下条款:在不被你同桌看到的情况下在方框中填写字母a或者b<br />
+把这看成成绩的赌注，我会随机把你们分成两两一组，你们不知道会和谁<br />
+分到一组，按如下方法给出你们的成绩：如果你选a而你对手选b,那么你的A<br />
+对手的C。如果你们都选a，你们都的B-。如果你选b，而对手选a,那么你的c<br />
+对手的a，如果你们都选b，你们都的B+。</p>
+</blockquote>
 
-<h2 id="section">博客平台</h2>
+<p>用博弈论的标准标准方式来整理信息<br />
+            对手<br />
+     || <em>a</em>   || <em>b</em>   ||<br />
+   a || B-,B- || A,C   ||<br />
+me b || C,A   || B+,B+ ||</p>
 
-<p>这个博客通过 <a href="http://jekyllrb.com/">Jekyll</a> 生成，部署在 <a href="https://pages.github.com">Github</a>，主题基于 <a href="https://github.com/P233/3-Jekyll">3-Jekyll</a> 修改生成，非常感谢 <a href="https://github.com/P233">Peiwen Lu</a> 开发出这么漂亮的主题。</p>
+<p>只有知道人关心什么，知道人们的收益是什么之后，<br />
+才能真正开始博弈<br /><br />
+当我们考虑自己的收益时，我们应该做什么?<br />
+如果我自己选择a:对手选择a那么我的0分，<br /><br />
+如果我选择b:对手选择a那么我的-1分，<br /><br />
+如果我选择a，对手选择b我的3分<br /><br />
+如果我选择b,对手选择b我的1分<br /><br />
+两种情况，无论对手怎么选择，我选择a总能得到最好的成绩<br />
+&gt;<em>定义：无论别人如何选择:如果选择a得到的结果优于选择b,那么a相对于b是个<br />
+严格优势策略.</em></p>
 
+<p><em>结论1:不要选择劣势策略</em><br />
+因为假设我和我的队友都这么想(选择严格优势策略.)如果我们都选择a那么我们得到<br />
+0个单位的效用.但是如果我们都换一个想法去选择b,那么我们就能得到1个单位的效用。</p>
+
+<p><em>结论2:若要不是经济学，理性的策略反而选择优势策略，使得结果变得跟糟糕（不<br />
+充分的结果，经济学里面的帕累托效率)</em>  也就是次优结果</p>
+
+<p>什么是囚徒困境?<br />
+这是一个故事，故事里有两个罪犯，他们被指控了，分别被关进了牢房。他们两被<br />
+单独提审。两个人都知道如果他们不坦白，他们只需要做一年牢。要是他们都坦白了<br />
+就得做10年牢。如果其中一个人坦白了。那么坦白的人无罪释放，而不坦白的需要坐<br />
+5年牢。</p>
+
+<p>当人们在乎的利益不同时，我们得到的结果也将完全不一样。<br />
+协和缪错</p>
+
+<p>如果我们改变了收益，改变了目的，那么我们就改变了博弈，改变了结果。</p>
+
+<p><em>结论3：收益非常重要</em> (汝欲求之，必先知之，You can’t get what you want ,till<br />
+you know what you want).<br />
+如果你知道你的对手会选b，那么我想大多数人都会选择a，因为啊是优势策略。</p>
+
+<p><em>结论4:分析博弈最重要的方法或者说策略分析的重要内容：要学会换位思考去分析对手<br />
+的收益是什么样的，然后以此得出他们会怎么做。</em></p>
+
+<p><em>结论5:人都是自私的</em></p>
+
+<p>游戏2：选数字从1到100之间选一个号码填到下面的方框内，不要让你同桌看到。<br />
+我们会计算全班的平均数。谁选的数字最接近平均数的三分之二，谁就是赢家。</p>
+
+<p>协和缪错误</p>
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/index.html&text=欢迎" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/2015/03/13/Boyi-Lesson1.html&text=耶鲁大学公开课：博弈论，导论笔记" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/index.html&title=欢迎" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/2015/03/13/Boyi-Lesson1.html&title=耶鲁大学公开课：博弈论，导论笔记" target="_blank"></a>
 </div> <!-- end #post__share -->
 <div id="disqus_thread" name="fengya">
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

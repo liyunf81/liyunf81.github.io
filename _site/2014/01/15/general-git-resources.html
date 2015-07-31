@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-<title>欢迎 | 凨</title>
+<title>Git 常用资源 | 凨</title>
 <meta name="author" content="凨">
+
+  <meta name="keywords" content="Git">
 
 
 
@@ -80,29 +82,132 @@
     <div id="post">
       <div id="pjax">
         <article id="post__content">
-  <h1 id="post__title" data-identifier="">欢迎</h1>
-  <p><img src="http://7x2xd3.com1.z0.glb.clouddn.com/back.jpg" alt="背景" /><br />
-## 简介<br />
-随着年龄的增加，阅历，感悟也在慢慢提升。曾经数次有想法写一个Bolg，可是却都搁浅了。这次<br />
-却借着失恋，突然想通了很多，于是此博客应运而生。</p>
+  <h1 id="post__title" data-identifier="20140115">Git 常用资源</h1>
+  <h2 id="section">历史管理</h2>
 
-<p>我只想把自己在生活中的摸爬滚打，工作的一点点经验，或者一个小小的学习笔记，都放在上面。<br />
-它们都是我生活中的组成部分。这个博客也许算得上是自己的一个寄托，也许还可以说是一种对生活<br />
-的记录。</p>
+<h3 id="section-1">查看历史</h3>
 
-<p>我将把博客分为技术，生活，旅游，读书，资源。这样方便管理，也方便我自己记录。</p>
+<pre><code>git log --pretty=oneline filename // 一行显示
+git show xxxx // 查看某次修改
+</code></pre>
 
-<h2 id="section">博客平台</h2>
+<h3 id="section-2">标签功能</h3>
 
-<p>这个博客通过 <a href="http://jekyllrb.com/">Jekyll</a> 生成，部署在 <a href="https://pages.github.com">Github</a>，主题基于 <a href="https://github.com/P233/3-Jekyll">3-Jekyll</a> 修改生成，非常感谢 <a href="https://github.com/P233">Peiwen Lu</a> 开发出这么漂亮的主题。</p>
+<pre><code>git tag // 显示所有标签
+git tag -l 'v1.4.2.*' // 显示 1.4.2 开头标签
+git tag v1.3 // 简单打标签   
+git tag -a v1.2 9fceb02 // 后期加注标签
+git tag -a v1.4 -m 'my version 1.4' // 增加标签并注释， -a 为 annotated 缩写
+git show v1.4 // 查看某一标签详情
+git push origin v1.5 // 分享某个标签
+git push origin --tags // 分享所有标签
+</code></pre>
 
+<h3 id="section-3">回滚操作</h3>
+<pre><code>reset --hard v0.1
+reflog
+reset --hard v0.2
+</code></pre>
+
+<h3 id="section-4">取消某个文件的修改</h3>
+<pre><code>git checkout -- &lt;filename&gt;
+</code></pre>
+
+<h3 id="section-5">删除文件</h3>
+<pre><code>git rm &lt;filename&gt;   直接删除文件
+git rm --cached &lt;filename&gt;    删除文件暂存状态
+</code></pre>
+
+<h3 id="section-6">移动文件</h3>
+<pre><code>git mv &lt;sourcefile&gt; &lt;destfile&gt;
+</code></pre>
+
+<h3 id="section-7">查看文件更新</h3>
+<pre><code>git diff              查看未暂存的文件更新 
+git diff --cached     查看已暂存文件的更新 
+</code></pre>
+
+<h3 id="staging">暂存和恢复当前staging</h3>
+
+<pre><code>git stash
+git stash apply
+</code></pre>
+
+<h2 id="section-8">分支管理</h2>
+
+<h3 id="section-9">创建分支</h3>
+
+<pre><code>git branch develop // 只创建分支
+git checkout -b master develop // 创建并切换到 develop 分支
+</code></pre>
+
+<h3 id="section-10">合并分支</h3>
+
+<pre><code>git checkout master // 切换到主分支
+git merge --no-ff develop // 把 develop 合并到 master 分支，no-ff 选项的作用是保留原分支记录
+git rebase develop // 合并分支
+git branch -d develop // 删除 develop 分支
+</code></pre>
+
+<h3 id="section-11">克隆远程分支</h3>
+<pre><code>git branch -r
+git checkout origin/android
+</code></pre>
+
+<h3 id="develop">修复develop上的合并错误</h3>
+
+<ol>
+  <li>将merge前的commit创建一个分之，保留merge后代码</li>
+  <li>将develop <code>reset --force</code>到merge前，然后<code>push --force</code></li>
+  <li>在分支中rebase develop</li>
+  <li>将分支push到服务器上重新merge</li>
+</ol>
+
+<h3 id="section-12">强制更新到远程分支最新版本</h3>
+
+<pre><code>git reset --hard origin/master
+git submodule update --remote -f
+</code></pre>
+
+<h2 id="submodule">Submodule使用</h2>
+
+<h3 id="submodule-1">克隆带submodule的库</h3>
+
+<pre><code>git clone --recursive https://github.com/chaconinc/MainProject
+</code></pre>
+
+<h3 id="cloneclone-submodule">clone主库后再去clone submodule</h3>
+
+<pre><code>git clone https://github.com/chaconinc/MainProject
+git submodule init
+git submodule update
+</code></pre>
+
+<h2 id="git">Git设置</h2>
+
+<p>Git的全局设置在<code>~/.gitconfig</code>中，单独设置在<code>project/.git/config</code>下。</p>
+
+<p>忽略设置全局在<code>~/.gitignore_global</code>中，单独设置在<code>project/.gitignore</code>下。</p>
+
+<h3 id="commit-">设置 commit 的用户和邮箱</h3>
+
+<pre><code>git config user.name "xx"
+git config user.email.com "xx@xx.com"
+</code></pre>
+
+<p>or</p>
+
+<pre><code>[user]
+    name = xxx
+    email = xxx@xxx.com
+</code></pre>
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/index.html&text=欢迎" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/2014/01/15/general-git-resources.html&text=Git 常用资源" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/index.html&title=欢迎" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/2014/01/15/general-git-resources.html&title=Git 常用资源" target="_blank"></a>
 </div> <!-- end #post__share -->
 <div id="disqus_thread" name="fengya">
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

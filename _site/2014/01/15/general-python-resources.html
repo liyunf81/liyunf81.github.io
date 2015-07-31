@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-<title>欢迎 | 凨</title>
+<title>Python 常用资源 | 凨</title>
 <meta name="author" content="凨">
+
+  <meta name="keywords" content="Python">
 
 
 
@@ -80,29 +82,43 @@
     <div id="post">
       <div id="pjax">
         <article id="post__content">
-  <h1 id="post__title" data-identifier="">欢迎</h1>
-  <p><img src="http://7x2xd3.com1.z0.glb.clouddn.com/back.jpg" alt="背景" /><br />
-## 简介<br />
-随着年龄的增加，阅历，感悟也在慢慢提升。曾经数次有想法写一个Bolg，可是却都搁浅了。这次<br />
-却借着失恋，突然想通了很多，于是此博客应运而生。</p>
+  <h1 id="post__title" data-identifier="20140115">Python 常用资源</h1>
+  <h2 id="section">常用代码</h2>
 
-<p>我只想把自己在生活中的摸爬滚打，工作的一点点经验，或者一个小小的学习笔记，都放在上面。<br />
-它们都是我生活中的组成部分。这个博客也许算得上是自己的一个寄托，也许还可以说是一种对生活<br />
-的记录。</p>
+<h3 id="section-1">遍历对象</h3>
+<pre><code>for key in a.__dict__:
+   print key,':',a.__dict__[key]
+</code></pre>
 
-<p>我将把博客分为技术，生活，旅游，读书，资源。这样方便管理，也方便我自己记录。</p>
+<h3 id="section-2">调试方法</h3>
+<pre><code>assert False   //引发异常，观察错误界面
+import logging
+logging.info('')  //写日志
+</code></pre>
 
-<h2 id="section">博客平台</h2>
-
-<p>这个博客通过 <a href="http://jekyllrb.com/">Jekyll</a> 生成，部署在 <a href="https://pages.github.com">Github</a>，主题基于 <a href="https://github.com/P233/3-Jekyll">3-Jekyll</a> 修改生成，非常感谢 <a href="https://github.com/P233">Peiwen Lu</a> 开发出这么漂亮的主题。</p>
+<h3 id="section-3">获得当前时间</h3>
+<pre><code>#时间戳
+time.time()
+#日期时间
+time.ctime()
+#iso时间
+datetime.fromtimestamp(time.time()).isoformat()
+#固定格式
+time.strftime('%Y-%m-%d',time.localtime(time.time())) ### 日期到时间戳
+dateC=datetime.datetime(2010,6,6,8,14,59)
+timestamp=time.mktime(dateC.timetuple()) ### 时间戳到日期
+ltime=time.localtime(1237515355.0)
+timeStr=time.strftime("%Y-%m-%d %H:%M:%S", ltime) ### 之后的包从绝对位置导入
+from __future__ import absolute_import
+</code></pre>
 
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/index.html&text=欢迎" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/2014/01/15/general-python-resources.html&text=Python 常用资源" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/index.html&title=欢迎" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/2014/01/15/general-python-resources.html&title=Python 常用资源" target="_blank"></a>
 </div> <!-- end #post__share -->
 <div id="disqus_thread" name="fengya">
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

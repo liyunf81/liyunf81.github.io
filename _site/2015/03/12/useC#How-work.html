@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-<title>欢迎 | 凨</title>
+<title>C#使用注意事项 | 凨</title>
 <meta name="author" content="凨">
 
+  <meta name="keywords" content="C#,优化,注意事项,U3D">
 
+
+
+  <meta name="description " content="在制作U3D游戏时，C#的一些优化意见和方案">
 
 
 <link rel="shortcut icon" href="http://7x2xd3.com1.z0.glb.clouddn.com/favicon.ico" />
@@ -80,29 +84,92 @@
     <div id="post">
       <div id="pjax">
         <article id="post__content">
-  <h1 id="post__title" data-identifier="">欢迎</h1>
-  <p><img src="http://7x2xd3.com1.z0.glb.clouddn.com/back.jpg" alt="背景" /><br />
-## 简介<br />
-随着年龄的增加，阅历，感悟也在慢慢提升。曾经数次有想法写一个Bolg，可是却都搁浅了。这次<br />
-却借着失恋，突然想通了很多，于是此博客应运而生。</p>
+  <h1 id="post__title" data-identifier="20150312">C#使用注意事项</h1>
+  <h2 id="c">C#使用注意事项</h2>
 
-<p>我只想把自己在生活中的摸爬滚打，工作的一点点经验，或者一个小小的学习笔记，都放在上面。<br />
-它们都是我生活中的组成部分。这个博客也许算得上是自己的一个寄托，也许还可以说是一种对生活<br />
-的记录。</p>
+<h2 id="c-1">撰写C#代码时注意事项.</h2>
 
-<p>我将把博客分为技术，生活，旅游，读书，资源。这样方便管理，也方便我自己记录。</p>
+<ul>
+  <li>数据类型选择是否合理包括类型的设计，进度，使用静态变量还是动态变量</li>
+</ul>
 
-<h2 id="section">博客平台</h2>
+<blockquote>
+  <p>动态变量和静态变量:<br />静态变量使用static修饰符进行声明，在所属类<br />
+被装载时创建，通过类进行访问。类的所有实例的同一个静态变量都是同一个值<br />
+（不考虑多线程的情况）非静态变量不带有static修饰符声明的变量称作非静态变量，<br />
+在类实例化时创建通过对象进行访问，同一个类的不同实例的同一个非静态变量可<br />
+以是不同的值。因为他们都是相互独立的。</p>
+</blockquote>
 
-<p>这个博客通过 <a href="http://jekyllrb.com/">Jekyll</a> 生成，部署在 <a href="https://pages.github.com">Github</a>，主题基于 <a href="https://github.com/P233/3-Jekyll">3-Jekyll</a> 修改生成，非常感谢 <a href="https://github.com/P233">Peiwen Lu</a> 开发出这么漂亮的主题。</p>
+<ul>
+  <li>容器类型选择:查找，插入，删除，随机访问，进行平衡选取最适合的容器，如果<br />
+预先知道容器的大小时，请在构造容器时，指定容量，避免以后加入元素时，内存重<br />
+分配。如果容器大小过大，而你又想要清除多余的内存，可使用带有trim字段的方法<br />
+进行清除内存冗余。</li>
+</ul>
+
+<blockquote>
+  <p>C#容器包含:两类容器，一个是:System.Array,一个是集合，而且其可以进行细分<br />
+1.C#集合类全部都集合在System.Collections命名空间中，包含了ArrayList,BitArray,<br />
+Hashtable,Queue,SortedList,Stack。C#2.0增加了泛型编程，它又增加了一个名字空<br />
+间System.Collections.Generic.里面存放着所有支持泛型的容器。包含了:Dictionary,<br />
+LinkedList,List,Queue,SortedDictionary,SortedList,Stack。</p>
+</blockquote>
+
+<ul>
+  <li>检查每个模块中的循环和递归，是否能够优化</li>
+</ul>
+
+<blockquote>
+  <p>尽量少的在循环中执行方法调用<br />尽量在循环中少做一些可避免的方法调用.</p>
+</blockquote>
+
+<ul>
+  <li>计算结果缓存，避免复杂计算，如开方，三角函数，取整.</li>
+  <li>静态，单件变量是否占用了大量的内存，是否能压缩存储某些数据，进度压缩等。</li>
+  <li>如果频繁的创建一些相同的对象，考虑使用对象池，这样在场景转换时，可以一并清理。<br />
+频繁分配的字节内存块，考虑使用内存块分配器。</li>
+  <li>频繁调用的接口，需要注意优化，尤其是应该去掉冗余检查，避免循环中出现代码分支。<br />
+如果函数的参数是一个比较占用内存的值类型，请考虑使用关键字ref 来进行引用传递避免<br />
+不必要的拷贝。</li>
+  <li>尽量少使用动态类型装换，as操作尽量避免，考虑使用多态来扩展不同类型的特殊行为。</li>
+  <li>
+    <p>避免值类型和引用类型之间的转换，也就是装箱和拆箱操作。用枚举类型作为dictionary key<br />
+同样会存在装箱操作。</p>
+  </li>
+  <li>
+    <p>如果if,else 分支过多，可以考虑使用switch 来替代，这样会提高不少效率，注意使用<br />
+switch时，尽量是case 中的条件常量小且连续。</p>
+  </li>
+  <li>
+    <p>字符串的拼接开销非常大，请使用stringbuilder避免内存多次分配。也可以使用string.format</p>
+  </li>
+  <li>
+    <p>避免在lambda表达式中引用外部变量，否则每次调用都会有多余的内存开销，编译器会将你引用<br />
+的所有变量和表达式打包到一个匿名对象中供目标调用，如果不小心还会有内存泄露。确保这些闭包<br />
+在确定的地方会被释放。同理，委托里面挂载的事件，处理函数也需要确保释放。</p>
+  </li>
+  <li>
+    <p>使用try finally using 方法来实现RAll。</p>
+  </li>
+  <li>
+    <p>引用飞托管资源对象，请事先dispose接口，并实现析构函数，这样才能确保非托管资源的必然释放。<br />
+析构函数很慢，使用非托管资源的对象应该提供析构函数。</p>
+  </li>
+  <li>
+    <p>unity中的对象关联内部的非托管代码对象，转型为object后，判断非空要注意使用equal方法，否则<br />
+检查会失败。</p>
+  </li>
+  <li>dictionary 中的containsKey和try get 搞清楚使用方式，选择最优写法。</li>
+</ul>
 
 
 </article> <!-- end #post__content -->
 
 <div id="post__share">
-  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/index.html&text=欢迎" target="_blank"></a>
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/2015/03/12/useC%23How-work.html&text=C#使用注意事项" target="_blank"></a>
   <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
-  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/index.html&title=欢迎" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/2015/03/12/useC%23How-work.html&title=C#使用注意事项" target="_blank"></a>
 </div> <!-- end #post__share -->
 <div id="disqus_thread" name="fengya">
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

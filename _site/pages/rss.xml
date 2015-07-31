@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>凨</title>
+    <link>http://liyunf81.github.io</link>
+    <description>凨的地盘</description>
+    
+      <item>
+        <title>念</title>
+        <link>http://liyunf81.github.io/2015/03/15/own-think.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/15/own-think.html</guid>
+        <pubDate>Sun, 15 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;深夜的静&lt;br /&gt;
+心里的孤独&lt;br /&gt;
+是此时的合唱&lt;br /&gt;
+它深深的侵蚀&lt;br /&gt;
+侵蚀我的防线&lt;br /&gt;
+一点一滴的崩溃，崩塌，决堤&lt;br /&gt;
+最终让我沦陷。&lt;br /&gt;
+我想我是无助的&lt;br /&gt;
+无助的处理着曾经的感情&lt;br /&gt;
+很想拥有，可却总是失去&lt;br /&gt;
+抓的越紧&lt;br /&gt;
+她却走的更快。&lt;br /&gt;
+未来我深爱的人儿啊&lt;br /&gt;
+希望你能够理解&lt;br /&gt;
+理解我对你的真心&lt;br /&gt;
+也希望你能用你的真心&lt;br /&gt;
+抚平我冰冷的内心。&lt;br /&gt;
+总想得到平衡&lt;br /&gt;
+最后总是倾斜.&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>C# 集合选择</title>
+        <link>http://liyunf81.github.io/2015/03/13/container-how-choose.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/13/container-how-choose.html</guid>
+        <pubDate>Fri, 13 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;c-&quot;&gt;C# 集合选择&lt;/h2&gt;
+&lt;p&gt;数据结构指相互之间存在一个特定关系的元素集合。&lt;br /&gt;
+线性集合就是指元素具有一个特定前驱和后继的数据结构。&lt;br /&gt;
+非线性集合是指元素具有多个前驱或者后继的数据结构。&lt;/p&gt;
+
+&lt;p&gt;而C#的集合也可以通过此来进行区分看下图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7x2xd3.com1.z0.glb.clouddn.com/AllDataContinary.png&quot; alt=&quot;Continary&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;线性集合按存储方式，又分为直接存储和顺序存储。&lt;br /&gt;
+直接存储是指：该类型集合的数据元素可以直接通过下标来访问。C#中有Array,List,String&lt;br /&gt;
+和struct.优点是：取和在末尾存放数据都是非常高效的。但是缺点是：向集合中间插入元素，&lt;br /&gt;
+非常低效。因为它需要给插入的元素腾出位置，并且所有它后面的元素都要往后移动一位。&lt;/p&gt;
+
+&lt;p&gt;顺序存储：一般大小都可以动态分配。它不能通过索引进行查找，但是可以通过地址进查询。&lt;br /&gt;
+但是效率非常低。为了找到某个元素，它必须遍历所有元素，知道找到想找到的元素为止。&lt;br /&gt;
+所以线性表的优点是插入和删除效率高，而缺点是查找的效率相对低一些。&lt;br /&gt;
+队列Queue&lt;t&gt;遵循先入先出的原则，在集合末尾添加，在集合其实删除。
+Stack&lt;t&gt;遵循的是后入先出原则。在集合末尾添加，在集合末尾删除。&lt;/t&gt;&lt;/t&gt;&lt;/p&gt;
+
+&lt;p&gt;为了选择你需要的集合，你必须要考虑你在集合上需要使用的操作。&lt;br /&gt;
+数组是最简单的也是一般情况最快的集合。也是我们最常用的一个集合。&lt;br /&gt;
+如果准备存储单一次序的对象，你也应该使用数组。&lt;br /&gt;
+ArrayList 类是在数组上的一个高度抽象类。当你不清楚你的集合具体有多大时，ArrayList类&lt;br /&gt;
+要比数组好很多。&lt;br /&gt;
+队列和栈类都在System.Array类上提供了特殊的接口。所以动态分配内存，开销也非常大。&lt;br /&gt;
+于是，在初始化时最好给定集合的容量大小。这样才能避免移动和拷贝元素的性能损失。&lt;br /&gt;
+队列的默认大小是32，栈的默认大小是10.&lt;/p&gt;
+
+&lt;p&gt;垃圾回收的高效，是的list结构在实际使用是占用时间最小的。如果你因为希望经常添加和删除里面的元素而&lt;br /&gt;
+选择了列表，那么使用null引用的字典。简单的存储关键字，你就可以使用listDictionary类。&lt;br /&gt;
+而且它用键值对应方式实现了单向链表。这些集合和它的一些相关操作都在System.Collections.Specialized名字空间里。&lt;/p&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>耶鲁大学公开课：博弈论，导论笔记</title>
+        <link>http://liyunf81.github.io/2015/03/13/Boyi-Lesson1.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/13/Boyi-Lesson1.html</guid>
+        <pubDate>Fri, 13 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;什么是博弈论？&lt;br /&gt;博弈论是研究策略形势，那么什么是策略形势呢？&lt;br /&gt;
+策略形势就是不完全竞争。其书面定义是行为影响结果，然而结果不仅&lt;br /&gt;
+取决于你的行为，还取决于其他人的行为。&lt;br /&gt;博弈论适用于经济学,&lt;br /&gt;
+也适用于政治学,法学，生物学，体育,etc.&lt;/p&gt;
+
+&lt;p&gt;游戏1是一个非常简单的成绩博弈&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;请阅读一下条款:在不被你同桌看到的情况下在方框中填写字母a或者b&lt;br /&gt;
+把这看成成绩的赌注，我会随机把你们分成两两一组，你们不知道会和谁&lt;br /&gt;
+分到一组，按如下方法给出你们的成绩：如果你选a而你对手选b,那么你的A&lt;br /&gt;
+对手的C。如果你们都选a，你们都的B-。如果你选b，而对手选a,那么你的c&lt;br /&gt;
+对手的a，如果你们都选b，你们都的B+。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;用博弈论的标准标准方式来整理信息&lt;br /&gt;
+            对手&lt;br /&gt;
+     || &lt;em&gt;a&lt;/em&gt;   || &lt;em&gt;b&lt;/em&gt;   ||&lt;br /&gt;
+   a || B-,B- || A,C   ||&lt;br /&gt;
+me b || C,A   || B+,B+ ||&lt;/p&gt;
+
+&lt;p&gt;只有知道人关心什么，知道人们的收益是什么之后，&lt;br /&gt;
+才能真正开始博弈&lt;br /&gt;&lt;br /&gt;
+当我们考虑自己的收益时，我们应该做什么?&lt;br /&gt;
+如果我自己选择a:对手选择a那么我的0分，&lt;br /&gt;&lt;br /&gt;
+如果我选择b:对手选择a那么我的-1分，&lt;br /&gt;&lt;br /&gt;
+如果我选择a，对手选择b我的3分&lt;br /&gt;&lt;br /&gt;
+如果我选择b,对手选择b我的1分&lt;br /&gt;&lt;br /&gt;
+两种情况，无论对手怎么选择，我选择a总能得到最好的成绩&lt;br /&gt;
+&amp;gt;&lt;em&gt;定义：无论别人如何选择:如果选择a得到的结果优于选择b,那么a相对于b是个&lt;br /&gt;
+严格优势策略.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;结论1:不要选择劣势策略&lt;/em&gt;&lt;br /&gt;
+因为假设我和我的队友都这么想(选择严格优势策略.)如果我们都选择a那么我们得到&lt;br /&gt;
+0个单位的效用.但是如果我们都换一个想法去选择b,那么我们就能得到1个单位的效用。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;结论2:若要不是经济学，理性的策略反而选择优势策略，使得结果变得跟糟糕（不&lt;br /&gt;
+充分的结果，经济学里面的帕累托效率)&lt;/em&gt;  也就是次优结果&lt;/p&gt;
+
+&lt;p&gt;什么是囚徒困境?&lt;br /&gt;
+这是一个故事，故事里有两个罪犯，他们被指控了，分别被关进了牢房。他们两被&lt;br /&gt;
+单独提审。两个人都知道如果他们不坦白，他们只需要做一年牢。要是他们都坦白了&lt;br /&gt;
+就得做10年牢。如果其中一个人坦白了。那么坦白的人无罪释放，而不坦白的需要坐&lt;br /&gt;
+5年牢。&lt;/p&gt;
+
+&lt;p&gt;当人们在乎的利益不同时，我们得到的结果也将完全不一样。&lt;br /&gt;
+协和缪错&lt;/p&gt;
+
+&lt;p&gt;如果我们改变了收益，改变了目的，那么我们就改变了博弈，改变了结果。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;结论3：收益非常重要&lt;/em&gt; (汝欲求之，必先知之，You can’t get what you want ,till&lt;br /&gt;
+you know what you want).&lt;br /&gt;
+如果你知道你的对手会选b，那么我想大多数人都会选择a，因为啊是优势策略。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;结论4:分析博弈最重要的方法或者说策略分析的重要内容：要学会换位思考去分析对手&lt;br /&gt;
+的收益是什么样的，然后以此得出他们会怎么做。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;结论5:人都是自私的&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;游戏2：选数字从1到100之间选一个号码填到下面的方框内，不要让你同桌看到。&lt;br /&gt;
+我们会计算全班的平均数。谁选的数字最接近平均数的三分之二，谁就是赢家。&lt;/p&gt;
+
+&lt;p&gt;协和缪错误&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>C#使用注意事项</title>
+        <link>http://liyunf81.github.io/2015/03/12/useC%23How-work.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/12/useC%23How-work.html</guid>
+        <pubDate>Thu, 12 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;c&quot;&gt;C#使用注意事项&lt;/h2&gt;
+
+&lt;h2 id=&quot;c-1&quot;&gt;撰写C#代码时注意事项.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;数据类型选择是否合理包括类型的设计，进度，使用静态变量还是动态变量&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;动态变量和静态变量:&lt;br /&gt;静态变量使用static修饰符进行声明，在所属类&lt;br /&gt;
+被装载时创建，通过类进行访问。类的所有实例的同一个静态变量都是同一个值&lt;br /&gt;
+（不考虑多线程的情况）非静态变量不带有static修饰符声明的变量称作非静态变量，&lt;br /&gt;
+在类实例化时创建通过对象进行访问，同一个类的不同实例的同一个非静态变量可&lt;br /&gt;
+以是不同的值。因为他们都是相互独立的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;容器类型选择:查找，插入，删除，随机访问，进行平衡选取最适合的容器，如果&lt;br /&gt;
+预先知道容器的大小时，请在构造容器时，指定容量，避免以后加入元素时，内存重&lt;br /&gt;
+分配。如果容器大小过大，而你又想要清除多余的内存，可使用带有trim字段的方法&lt;br /&gt;
+进行清除内存冗余。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;C#容器包含:两类容器，一个是:System.Array,一个是集合，而且其可以进行细分&lt;br /&gt;
+1.C#集合类全部都集合在System.Collections命名空间中，包含了ArrayList,BitArray,&lt;br /&gt;
+Hashtable,Queue,SortedList,Stack。C#2.0增加了泛型编程，它又增加了一个名字空&lt;br /&gt;
+间System.Collections.Generic.里面存放着所有支持泛型的容器。包含了:Dictionary,&lt;br /&gt;
+LinkedList,List,Queue,SortedDictionary,SortedList,Stack。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;检查每个模块中的循环和递归，是否能够优化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;尽量少的在循环中执行方法调用&lt;br /&gt;尽量在循环中少做一些可避免的方法调用.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;计算结果缓存，避免复杂计算，如开方，三角函数，取整.&lt;/li&gt;
+  &lt;li&gt;静态，单件变量是否占用了大量的内存，是否能压缩存储某些数据，进度压缩等。&lt;/li&gt;
+  &lt;li&gt;如果频繁的创建一些相同的对象，考虑使用对象池，这样在场景转换时，可以一并清理。&lt;br /&gt;
+频繁分配的字节内存块，考虑使用内存块分配器。&lt;/li&gt;
+  &lt;li&gt;频繁调用的接口，需要注意优化，尤其是应该去掉冗余检查，避免循环中出现代码分支。&lt;br /&gt;
+如果函数的参数是一个比较占用内存的值类型，请考虑使用关键字ref 来进行引用传递避免&lt;br /&gt;
+不必要的拷贝。&lt;/li&gt;
+  &lt;li&gt;尽量少使用动态类型装换，as操作尽量避免，考虑使用多态来扩展不同类型的特殊行为。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;避免值类型和引用类型之间的转换，也就是装箱和拆箱操作。用枚举类型作为dictionary key&lt;br /&gt;
+同样会存在装箱操作。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;如果if,else 分支过多，可以考虑使用switch 来替代，这样会提高不少效率，注意使用&lt;br /&gt;
+switch时，尽量是case 中的条件常量小且连续。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;字符串的拼接开销非常大，请使用stringbuilder避免内存多次分配。也可以使用string.format&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;避免在lambda表达式中引用外部变量，否则每次调用都会有多余的内存开销，编译器会将你引用&lt;br /&gt;
+的所有变量和表达式打包到一个匿名对象中供目标调用，如果不小心还会有内存泄露。确保这些闭包&lt;br /&gt;
+在确定的地方会被释放。同理，委托里面挂载的事件，处理函数也需要确保释放。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;使用try finally using 方法来实现RAll。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;引用飞托管资源对象，请事先dispose接口，并实现析构函数，这样才能确保非托管资源的必然释放。&lt;br /&gt;
+析构函数很慢，使用非托管资源的对象应该提供析构函数。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;unity中的对象关联内部的非托管代码对象，转型为object后，判断非空要注意使用equal方法，否则&lt;br /&gt;
+检查会失败。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;dictionary 中的containsKey和try get 搞清楚使用方式，选择最优写法。&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>股票初级知识</title>
+        <link>http://liyunf81.github.io/2015/03/12/stock-begin.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/12/stock-begin.html</guid>
+        <pubDate>Thu, 12 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;section&quot;&gt;股票初级了解&lt;/h2&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>C#项目中数据类型的选择</title>
+        <link>http://liyunf81.github.io/2015/03/11/dataStuct-work.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/11/dataStuct-work.html</guid>
+        <pubDate>Wed, 11 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;c&quot;&gt;C#项目中数据类型的选择&lt;/h2&gt;
+&lt;p&gt;当使用内置的数据类型时，考虑数据的最大数据范围，数据需要的精度，操作，etc.来确定使用什么样的类型.&lt;br /&gt;
+比如Int 有符号的整型的取值范围为2147483647~-2147483648 所以在这个范围之间的数据都可以选择此数据类&lt;br /&gt;
+型。当然也可以考虑一些其他的数据类型。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在这，突然想到有想要深入了解下C#的基本数据类型.首先了解一点:&lt;br /&gt;
+ 1.C#认可的基础数据类型并没有内置于C#语言中，而是内置于.net framework中.就如假如我们声明一个int型变量时，&lt;br /&gt;
+ 声明的实际是.net结构System.Int32的一个实例.这就是为什么C#的基本数据类型却可以想我们自定义类一样使用一些方法.&lt;br /&gt;
+ 2.C#现阶段有15个预定类型，其中13个是值类型，两个是引用类型.(问:此处的值类型和引用类型有什么区别？&lt;br /&gt;
+ 什么是值类型？什么事引用类型?，使用它们需要注意一些什么?)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;1、整型&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;类型名字&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;.net类型&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;*说明&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;取值范围&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;sbyte&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Sbyte&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;8位有符号的整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;-128~127(2^7 ~ 2^7-1)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;short&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Int16&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16位有符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;-32768~32767(2^15 ~ 2^15-1)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;int&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Int32&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;32位有符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;-2147483648~2147483647(2^35 ~ 2^35-1)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;long&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Int64&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;64位有符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;-2^63 ~ 2^63 -1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;byte&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Byte&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;8位无符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;0~255(0 ~ 2^8-1)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;ushort&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.UInt16&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;16位无符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;0~2^16-1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;uint&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.UInt32&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;32位无符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;0~2^32-1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;long&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.UInt64&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;64位无符号整型&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;0~2^64-1&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;2、浮点类型&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;类型名字&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;.net类型&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;说明&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;取值范围&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;float&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Single&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;小数点精度为7&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;±1.5 × 10-45 到 ±3.4 × 1038&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;double&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Double&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;小树点进度为15到16&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;±5.0 × 10-324 到 ±1.7 × 10308&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;说明:double 数据类型的精度是float数据类型精度的2倍左右.如果在代码中没有对浮点型数据进行硬编码(12.3)则&lt;br /&gt;
+ 编译器默认此数据为double类型.如果想要使其为float则可以在数据后面加上f或者F&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;float f = 12.5f;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;decimal&quot;&gt;3、decimal类型&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;类型名字&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;.net类型&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;说明&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;取值范围&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;decimal&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Decimal&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;128位高进度10进制表示法&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;±1.5 × 10-45 到 ±3.4 × 1038&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;说明:decimal类型专用于进行财务类计算或者一些复杂的涉及到进度非常高的数学计算.&lt;br /&gt;
+ 要把一个数据定义为decimal类型，需要在数字后面添加字符M或者m 如:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;decimal d = 211.55m;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;boolchar&quot;&gt;4、bool类型和char类型&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;类型名字&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;.net类型&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;说明&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;取值范围&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;bool&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Boolean&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;表示true或者false&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;true or false&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;char&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Char&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;表示一个16位的Unicode字符&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;-32768~32767&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;说明:上面的数据类型都是数值类型&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;object--string&quot;&gt;5、object 和 string类型&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;类型名字&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;.net类型&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;说明&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;取值范围&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;object&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.Object&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;所有数据类型的基&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;string&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;System.String&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;字符串&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;6、引用类型和数值类型&lt;/h3&gt;
+
+&lt;p&gt;在C#中设计类型的时候，就需要决定类型实例的行为，这样才能做到逻辑清晰，易维护。在使用C#制作项目时，需要正确理解&lt;br /&gt;
+值类型和引用类型的区别。变量是值类型还是引用类型往往都有其数据类型决定，所以清楚哪些数据类型是值类型，哪些是引用&lt;br /&gt;
+类型非常有必要.&lt;/p&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;6.1、值类型&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;C#中所有值类型都隐式派生自System.ValueType.&lt;/li&gt;
+  &lt;li&gt;结构体struct直接派生自System.ValueType.&lt;/li&gt;
+  &lt;li&gt;枚举enum 派生自System.Enum.&lt;/li&gt;
+  &lt;li&gt;可空类型System.Nullable&lt;t&gt;泛型结构&lt;/t&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;此处联想到一个问题:既然所值类型都派生自System.ValueType.也就是说它们其实也是一个类结构，那么我是否可以派生自这&lt;br /&gt;
+ 些类型呢？答案是不能的，因为所有这些值类型都是密封的(seal)的.这里补充下密封类的概念。&lt;br /&gt;
+ C#中使用关键字sealed，将类和方法声明为密封类或者密封方法，密封类表示不能被继承，但是可以继承其他的类或者接口.&lt;br /&gt;
+ 在密封类中不能声明受保护成员或虚成员，因为受保护成员只能从派生类中访问，而虚成员可以在派生类中重载。&lt;br /&gt;
+ 由于密封类的不可继承性，其不能声明为抽象的，即sealed和abstract修饰符不能同时使用.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;public sealed class myClass //声明的密封类
+{
+    public int = 0;
+    public void method()
+    {
+    
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里有一个值得注意的地方,值类型的基类System.ValueType直接派生字System.Object。也许你会奇怪，object不是引用类么？&lt;br /&gt;
+ValueType作为其子类不是应该也是么。因为C#重载了Equals()方法。使得System.ValueType作为值类型.&lt;/p&gt;
+
+&lt;p&gt;怎么判断一个类型是值类型呢？用Type.IsValueType.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Type aType = new Type();
+if(aType.GetType().IsValueType)
+{
+    System.Console.WriteLine(&quot;这是一个值类型&quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;6.2、引用类型&lt;/h4&gt;
+&lt;p&gt;数组 派生自System.Array.&lt;/p&gt;
+
+&lt;p&gt;用户自定义的类型:class,interface,delegate,object(System.Object的别名),string&lt;/p&gt;
+
+&lt;h4 id=&quot;section-5&quot;&gt;6.3、值类型和引用类型在内存中的部署&lt;/h4&gt;
+&lt;p&gt;MSDN上说:托管堆上部署了所有引用类型.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;object refernce = new object(); new 操作符将在托管对上创建一个内存，并分配其内存地址。reference在栈上保存着这个地址。在次reference相当于C语言中的指针.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-6&quot;&gt;6.3.1、数组&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;int[] reference = new int[100]; 根据前面所说，数组属于引用类型，而int则为数值类型。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;那么问题来了!引用类型的数组中保存的值类型元素它到底存放在栈中还是堆中呢？&lt;/p&gt;
+
+&lt;p&gt;如果我们用windg查看reference[i]在内存中的具体位置，那么就会发现他们都存储在堆中。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Type[] array = new Type[100]; 如果Type是值类型，则会一次性在托管堆中分配空间，并给其所有元素初始化。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果Type是引用类型，则会再堆栈中为数组array分配一次空间，但是不会为其元素初始化。只有等到以后有显式初始化这个元素时，&lt;br /&gt;
+这个引用类型的元素才被分配空间到托管堆上。&lt;/p&gt;
+
+&lt;h5 id=&quot;section-7&quot;&gt;6.3.2、嵌套类型&lt;/h5&gt;
+&lt;p&gt;假如引用类型包括了数值类型，那么这个变量存放在什么地方呢？这个变量的成员又存放在什么地方呢？&lt;/p&gt;
+
+&lt;p&gt;计入数值类型包括了引用类型，那么这个变量应该存放在什么地方呢？这个变量的各个组成部分又应该放在什么地方呢？&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class ReferenceTypeClass
+{
+     private int _valueTypeFiled; //值类型
+
+    public int Method()
+    {
+        int localValueType = 0; //值类型
+    }
+}
+
+ReferenceTypeClass referenceTypeInstance = new ReferenceTypeClass();//不用说，referenceTypeInstance指向的地址存放在堆栈中
+//_valueTypeFiled 会存放在什么地方呢？
+referenceTypeInstance.Method(); //此时Method方法内的局部变量又存放在什么地方呢？
+
+public struct ValueTypeStruct
+{
+    private object _referenceField;
+
+    public void Method()
+    {
+        object localReferece = new object();
+    }
+}
+
+ValueTypeStruct valueTypeInstance = new ValueTypeStruct();
+valueTypeInstance.Method();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;valueTypeInstance 为一个结构体，按照常理应该保存在栈中，那么_referenceField 和localReference引用变量应该存在什么地方呢？&lt;br /&gt;
+&amp;gt;一般规律:引用类型存放在堆中数值类型总是更随其上下文。作为某个类成员时，将会更随所属变量。局部变量，则存在于栈中。&lt;/p&gt;
+
+&lt;h5 id=&quot;section-8&quot;&gt;6.3.3、正确使用数值类型和引用类型&lt;/h5&gt;
+&lt;p&gt;下面是从Effective C#摘录的一部分关于引用类型和数值类型的使用场合：&lt;br /&gt;
+1.如果以下问题都是yes我们应该创建为值类型&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1.该类型主要职责是否用于存储数据？&lt;br /&gt;
+ 2.该类型的公有接口是否完全由一些数据成员存储属性定义?&lt;br /&gt;
+ 3.是否确信该类型永远不可能有子类？&lt;br /&gt;
+ 4.是否确信类型永远不可能具有多态？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2.数值类型尽可能实现具有常量性和原子性&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1.常量性:如果构造的时候验证了参数的有效性，那么后面使用的时候就一直有效。禁止更改，这样会省去后面很多不必要的错误检&lt;br /&gt;
+查.确保线程安全，引用多个线程同时访问时都是同样地内容。&lt;br /&gt;
+ 2.具有原子性:我们通常会直接替换一个原子型的整个类容.&lt;br /&gt;
+ 下面有一个例子&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;public struct Address
+{
+    private string _city;
+    private string _province;
+    private int _zipCode;
+
+    public string City
+    {
+        get{return _city;}
+        set{_city = value;}
+    }
+
+    public string Province
+    {
+        get{return _province;}
+        set{_province = value;}
+    }
+
+    public int ZipCode
+    {
+        get{return _zipCode;}
+        set{_zipCode = value;}
+    }
+}
+
+//创建一个实例
+Address address = new Address();
+address.City = &quot;Chengdu&quot;;
+address.Province = &quot;Sichuan&quot;;
+address.ZipCode = 61000;
+ //更改这个实例
+address.City = &quot;Nanjing&quot;;
+address.Province = &quot;Jiangsu&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;内部状态的改变可能违反对象的不变式.&lt;br /&gt;
+ 如果一个多线程程序，在更改City的过程中，另外一个线程可能得到不一致的数据视图。&lt;br /&gt;
+ 将Address改为常量类型&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public struct Address
+{
+    private string _city;
+    private string _province;
+    private int    _zipCode;
+
+    public Address(string city,string province,int zipCode)
+    {
+        _city = city;
+        _province = province;
+        _zipCode = zipCode;
+    }
+
+    public string City
+    {
+        get{return _city;}
+    }
+
+    public string Province
+    {
+        get{return _province;}
+    }
+
+    public int ZipCode
+    {
+        get{return _zipCode;}
+    }
+}
+//如果此时需要更改address，那么就不能修改现有实例了，必须创建一个新的实例
+Address address = new Address(&quot;Chengdu&quot;,&quot;Sichuan&quot;,610000);
+address = new Address(&quot;Nanjing&quot;,&quot;Jiangsu&quot;,210000); 此时Address将不会存在线程安全性问题。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;section-9&quot;&gt;6.3.4 确保0为值类型的有效状态&lt;/h5&gt;
+&lt;p&gt;.net 的默认初始化会将应用类型设置为null，而值类型，无论我们是否提供构造函数，都会有一个默认的构造函数，将其设置为0.&lt;/p&gt;
+
+&lt;h5 id=&quot;section-10&quot;&gt;6.3.5 尽量减少装箱和拆箱操作&lt;/h5&gt;
+&lt;p&gt;装箱是指一个值类型放入一个未具名类型的引用类型中，如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;int valueType = 0;
+object refenceType = valueType;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;拆箱是指从前面的装箱对象中取出值类型:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;object refenceType;
+int valueType = (int)refenceType;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;装箱和拆箱相当耗费性能，而且很有可能引起一些非常诡异的bug，我们应该尽量避免。而且装箱和拆箱最大的问题在于总会自动进行。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;7、总结&lt;/h3&gt;
+&lt;p&gt;1.C#中变量是值类型还是引用类型取决于数据类型。&lt;br /&gt;
+2.C#中的值类型，包括基本的内置类型，结构体，枚举，可空类型。&lt;br /&gt;
+3.C#中的应用类型，包括数组，类，接口，委托，object,字符串。&lt;br /&gt;
+4.数组的元素，不管是引用类型还是数值类型都存放在堆中。&lt;br /&gt;
+5.数值类型在内存管理方面具有更好的效率，但是不支持多态。且用于存储数据。&lt;br /&gt;
+6.引用类型则适用于定义程序的行为，且支持多态和派生。&lt;br /&gt;
+7.数值类型尽量满足常量性和原子性。&lt;br /&gt;
+8.确保数值类型的0为类型的有效状态&lt;br /&gt;
+9.尽量避免装箱和拆箱操作。&lt;/p&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>Mac 常用资源</title>
+        <link>http://liyunf81.github.io/2014/08/03/general-mac-resources.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2014/08/03/general-mac-resources.html</guid>
+        <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;section&quot;&gt;常用软件&lt;/h2&gt;
+
+&lt;h3 id=&quot;alfred&quot;&gt;Alfred&lt;/h3&gt;
+
+&lt;h4 id=&quot;alfredworkflow&quot;&gt;Alfred常用Workflow&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kapeli.com/dash&quot;&gt;Dash&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/liberize/alfred-dict-workflow&quot;&gt;Dict - Lookup Word&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.alfredforum.com/topic/917-reminders/&quot;&gt;Reminders&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://support.alfredapp.com/evernote&quot;&gt;Evernote&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.alfredforum.com/topic/1009-notes/&quot;&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;常用命令&lt;/h2&gt;
+
+&lt;h3 id=&quot;dashboard&quot;&gt;开启关闭dashboard&lt;/h3&gt;
+
+&lt;p&gt;关闭&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;defaults write com.apple.dashboard mcx-disabled -boolean YES
+killall Dock
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;开启&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;defaults write com.apple.dashboard mcx-disabled -boolean NO
+killall Dock
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;剪贴板操作&lt;/h3&gt;
+&lt;p&gt;写入剪切板&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &#39;test&#39; &amp;gt; pbcopy 
+cat testfile &amp;gt; pbcopy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;读取剪贴板&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pbpaste &amp;gt; testfile
+pbpaste | cat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;hidpi&quot;&gt;开启关闭Hidpi&lt;/h3&gt;
+&lt;p&gt;开启&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool YES
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;关闭&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo defaults delete /Library/Preferences/com.apple.windowserver DisplayResolutionDisabled
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;itermoptionaltmeta&quot;&gt;设置iterm中option为alt(meta)键&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://7u2ho6.com1.z0.glb.clouddn.com/resource-set-meta-to-alt.png&quot; alt=&quot;option-to-meta&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;dropbox&quot;&gt;删除dropbox冲突文件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;find . -type f -name &quot;* conflicted *&quot; -exec rm -f {} \;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;launchpad&quot;&gt;清空Launchpad（删除掉）&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sqlite3 ~/Library/Application\ Support/Dock/*.db &#39;DELETE FROM apps;&#39; &amp;amp;&amp;amp; killall Dock
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;launchpad-1&quot;&gt;重置Launchpad&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;rm -f ~/Library/Application\ Support/Dock/*.db &amp;amp;&amp;amp; killall Dock
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;finder&quot;&gt;修改Finder中文件夹显示语言&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# 以Desktop为例
+touch ~/Desktop/.localized
+chmod 600 ~/Desktop/.localized
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;常用快捷键&lt;/h2&gt;
+
+&lt;h3 id=&quot;chrome&quot;&gt;Chrome&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;切换用户 &lt;code&gt;Command + shift + M&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>SVN 常用资源</title>
+        <link>http://liyunf81.github.io/2014/01/15/general-svn-resources.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2014/01/15/general-svn-resources.html</guid>
+        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;section&quot;&gt;常用指令&lt;/h2&gt;
+
+&lt;h3 id=&quot;checkout&quot;&gt;将文件checkout到本地目录&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn checkout path（path是服务器上的目录）
+svn checkout svn://192.168.1.1/pro/domain
+svn co
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;往版本库中添加新的文件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn add file
+svn add test.php(添加test.php)
+svn add *.php(添加当前目录下所有的php文件)
+svn add *.php --force(增加所有文件)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;将改动的文件提交到版本库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn commit -m “LogMessage“ [-N] [--no-unlock] PATH(如果选择了保持锁，就使用–no-unlock开关)
+svn commit -m “add test file for my test“ test.php
+svn ci
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;加锁/解锁&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn lock -m “LockMessage“ [--force] PATH
+svn lock -m “lock test file“ test.php
+svn unlock PATH
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;更新到某个版本&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn update -r m path
+svn update 如果后面没有目录，默认将当前目录以及子目录下的所有文件都更新到最新版本。
+svn update -r 200 test.php(将版本库中的文件test.php还原到版本200)
+
+svn update test.php(更新，于版本库同步。如果在提交的时候提示过期的话，是因为冲突，需要先update，修改文件，然后清除svn resolved，最后再提交commit)
+
+svn up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;查看文件或者目录状态&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn status path（目录下的文件和子目录的状态，正常状态不显示）
+【?：不在svn的控制中；M：内容被修改；C：发生冲突；A：预定加入到版本库；K：被锁定】
+
+svn status -v path(显示文件和子目录状态)
+第一列保持相同，第二列显示工作版本号，第三和第四列显示最后一次修改的版本号和修改人。
+
+注：svn status、svn diff和 svn revert这三条命令在没有网络的情况下也可以执行的，原因是svn在本地的.svn中保留了本地版本的原始拷贝。
+
+svn st
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;删除文件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn delete path -m “delete test fle“
+svn delete svn://192.168.1.1/pro/domain/test.php -m “delete test file”
+或者直接svn delete test.php 然后再svn ci -m ‘delete test file‘，推荐使用这种
+svn (del, remove, rm)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;查看日志&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn log path 
+svn log test.php 显示这个文件的所有修改记录，及其版本号的变化
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;查看文件详细信息&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn info path
+svn info test.php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;比较差异&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn diff path(将修改的文件与基础版本比较)
+svn diff test.php
+svn diff -r m:n path(对版本m和版本n比较差异)
+svn diff -r 200:201 test.php
+svn di
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;将两个版本之间的差异合并到当前文件&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn merge -r m:n path
+svn merge -r 200:205 test.php（将版本200与205之间的差异合并到当前文件，但是一般都会产生冲突，需要处理一下）
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;svn-&quot;&gt;SVN 帮助&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn help
+svn help ci
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;版本库下的文件和目录列表&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn list path 
+svn ls
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-12&quot;&gt;创建纳入版本控制下的新目录&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn mkdir: 创建纳入版本控制下的新目录。
+mkdir PATH…
+mkdir URL…
+
+创建版本控制的目录。
+
+1、每一个以工作副本 PATH 指定的目录，都会创建在本地端，并且加入新增调度，以待下一次的提交。
+2、每个以URL指定的目录，都会透过立即提交于仓库中创建.在这两个情况下，所有的中间目录都必须事先存在。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-13&quot;&gt;恢复本地修改&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn revert: 恢复原始未改变的工作副本文件 (恢复大部份的本地修改)。revert:
+用法: revert PATH…
+注意: 本子命令不会存取网络，并且会解除冲突的状况。但是它不会恢复被删除的目录
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;url&quot;&gt;代码库URL变更&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn switch (sw): 更新工作副本至不同的URL。 
+
+1、switch URL [PATH]
+2、switch –relocate FROM TO [PATH...]
+1、更新你的工作副本，映射到一个新的URL，其行为跟“svn update”很像，也会将服务器上文件与本地文件合并。这是将工作副本对应到同一仓库中某个分支或者标记的方法。
+
+2、改写工作副本的URL元数据，以反映单纯的URL上的改变。当仓库的根URL变动(比如方案名或是主机名称变动)，但是工作副本仍旧对映到同一仓库的同一目录时使用这个命令更新工作副本与仓库的对应关系。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-14&quot;&gt;解决冲突&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn resolved: 移除工作副本的目录或文件的“冲突”状态。 java设计模式之——策略模式
+用法: resolved PATH…
+注意: 本子命令不会依语法来解决冲突或是移除冲突标记；它只是移除冲突的相关文件，然后让 PATH 可以再次提交。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;url-1&quot;&gt;输出指定文件或URL的内容。&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;svn cat 目标[@版本]…如果指定了版本，将从指定的版本开始查找。
+svn cat -r PREV filename &amp;gt; filename (PREV 是上一版本,也可以写具体版本号,这样输出结果是可以提交的)
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>Shell 常用资源</title>
+        <link>http://liyunf81.github.io/2014/01/15/general-shell-resources.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2014/01/15/general-shell-resources.html</guid>
+        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;section&quot;&gt;常用指令&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;文本内容搜索&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;grep aaa * 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;文件夹操作&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;查看文件夹大小   du -h --max-depth=1 /home/ys
+查看驱动器空间   df -h 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;压缩命令&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;tar zxvf aaa.tar.gz
+tar zcvf aaa.tar.gz aaa
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;登陆到其他用户&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;login
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;查看端口的占用&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;lsof -i:8087  查看8087端口的使用
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;批量杀死进程&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ps -aux|grep name|grep -v grep|cut -c 9-15|xargs kill -9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;查看当前时间&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;date       时间
+date +%s   时间戳
+date -d &quot;2010-07-20 10:25:30&quot; +%s  指定时间时间戳
+date -d &quot;@1279592730&quot;    时间戳转时间
+date -d &quot;1970-01-01 14781 days&quot; &quot;+%Y/%m/%d %H:%M:%S&quot; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;查看进程内存使用情况&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;top -d 1 -p pid [,pid ...]
+pmap pid 
+ps aux|grep process_name
+查看/proc/process_id/文件夹下的status文件
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;linux&quot;&gt;查看Linux内核版本或发布版本&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;lsb_release -a
+uname -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;http&quot;&gt;一句话实现一个HTTP服务，把当前文件夹作为根目录&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;python -m SimpleHTTPServer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;查看本地网络服务活动状态&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;lsof -i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;ip&quot;&gt;查看自己的外网ip&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;curl ifconfig.me
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;下载整个网站&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;wget --random-wait -r -p -e robots=off -U mozilla http://www.example.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;后台运行一段不中止的程序，并可随时查看它的状态&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;screen -d -m -S some_ name ping my_router
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-12&quot;&gt;查看进程执行的时间&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ps -A -opid,stime,etime,args | grep python
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-13&quot;&gt;创建守护进程&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;nohup python /var/www/a.py &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-14&quot;&gt;查看当前文件夹下文件（文件夹）大小&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;du -h --max-depth=1 .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-15&quot;&gt;查看所有磁盘大小&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;df -h
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-16&quot;&gt;诊断网络&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;mtr 
+ping
+traceroute
+dig
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-17&quot;&gt;列出本机监听的端口号&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;netstat –tlnp
+netstat -anop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-18&quot;&gt;在远程机器上运行一段脚本&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh user@server bash &amp;lt; /path/to/local/script.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-19&quot;&gt;端口扫描&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;nc -z -v -n 127.0.0.1 20-100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;google20&quot;&gt;负载测试，30秒内向Google发起20个并发连接&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;siege -c20 www.google.co.uk -b -t30s
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Python 常用资源</title>
+        <link>http://liyunf81.github.io/2014/01/15/general-python-resources.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2014/01/15/general-python-resources.html</guid>
+        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;section&quot;&gt;常用代码&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;遍历对象&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;for key in a.__dict__:
+   print key,&#39;:&#39;,a.__dict__[key]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;调试方法&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;assert False   //引发异常，观察错误界面
+import logging
+logging.info(&#39;&#39;)  //写日志
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;获得当前时间&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;#时间戳
+time.time()
+#日期时间
+time.ctime()
+#iso时间
+datetime.fromtimestamp(time.time()).isoformat()
+#固定格式
+time.strftime(&#39;%Y-%m-%d&#39;,time.localtime(time.time())) ### 日期到时间戳
+dateC=datetime.datetime(2010,6,6,8,14,59)
+timestamp=time.mktime(dateC.timetuple()) ### 时间戳到日期
+ltime=time.localtime(1237515355.0)
+timeStr=time.strftime(&quot;%Y-%m-%d %H:%M:%S&quot;, ltime) ### 之后的包从绝对位置导入
+from __future__ import absolute_import
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>Git 常用资源</title>
+        <link>http://liyunf81.github.io/2014/01/15/general-git-resources.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2014/01/15/general-git-resources.html</guid>
+        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
+        <description>&lt;h2 id=&quot;section&quot;&gt;历史管理&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;查看历史&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git log --pretty=oneline filename // 一行显示
+git show xxxx // 查看某次修改
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;标签功能&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git tag // 显示所有标签
+git tag -l &#39;v1.4.2.*&#39; // 显示 1.4.2 开头标签
+git tag v1.3 // 简单打标签   
+git tag -a v1.2 9fceb02 // 后期加注标签
+git tag -a v1.4 -m &#39;my version 1.4&#39; // 增加标签并注释， -a 为 annotated 缩写
+git show v1.4 // 查看某一标签详情
+git push origin v1.5 // 分享某个标签
+git push origin --tags // 分享所有标签
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;回滚操作&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;reset --hard v0.1
+reflog
+reset --hard v0.2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;取消某个文件的修改&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git checkout -- &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;删除文件&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git rm &amp;lt;filename&amp;gt;   直接删除文件
+git rm --cached &amp;lt;filename&amp;gt;    删除文件暂存状态
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;移动文件&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git mv &amp;lt;sourcefile&amp;gt; &amp;lt;destfile&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;查看文件更新&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git diff              查看未暂存的文件更新 
+git diff --cached     查看已暂存文件的更新 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;staging&quot;&gt;暂存和恢复当前staging&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git stash
+git stash apply
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;分支管理&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;创建分支&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git branch develop // 只创建分支
+git checkout -b master develop // 创建并切换到 develop 分支
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;合并分支&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git checkout master // 切换到主分支
+git merge --no-ff develop // 把 develop 合并到 master 分支，no-ff 选项的作用是保留原分支记录
+git rebase develop // 合并分支
+git branch -d develop // 删除 develop 分支
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;克隆远程分支&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;git branch -r
+git checkout origin/android
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;develop&quot;&gt;修复develop上的合并错误&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将merge前的commit创建一个分之，保留merge后代码&lt;/li&gt;
+  &lt;li&gt;将develop &lt;code&gt;reset --force&lt;/code&gt;到merge前，然后&lt;code&gt;push --force&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;在分支中rebase develop&lt;/li&gt;
+  &lt;li&gt;将分支push到服务器上重新merge&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;section-12&quot;&gt;强制更新到远程分支最新版本&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git reset --hard origin/master
+git submodule update --remote -f
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;submodule&quot;&gt;Submodule使用&lt;/h2&gt;
+
+&lt;h3 id=&quot;submodule-1&quot;&gt;克隆带submodule的库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone --recursive https://github.com/chaconinc/MainProject
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;cloneclone-submodule&quot;&gt;clone主库后再去clone submodule&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/chaconinc/MainProject
+git submodule init
+git submodule update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;git&quot;&gt;Git设置&lt;/h2&gt;
+
+&lt;p&gt;Git的全局设置在&lt;code&gt;~/.gitconfig&lt;/code&gt;中，单独设置在&lt;code&gt;project/.git/config&lt;/code&gt;下。&lt;/p&gt;
+
+&lt;p&gt;忽略设置全局在&lt;code&gt;~/.gitignore_global&lt;/code&gt;中，单独设置在&lt;code&gt;project/.gitignore&lt;/code&gt;下。&lt;/p&gt;
+
+&lt;h3 id=&quot;commit-&quot;&gt;设置 commit 的用户和邮箱&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;git config user.name &quot;xx&quot;
+git config user.email.com &quot;xx@xx.com&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[user]
+    name = xxx
+    email = xxx@xxx.com
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      </item>
+    
+  </channel>
+</rss>
