@@ -20,6 +20,8 @@
 		A7F0A5921B705A730077A1D5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A5911B705A730077A1D5 /* UIView+Frame.m */; };
 		A7F0A5931B705A730077A1D5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A5911B705A730077A1D5 /* UIView+Frame.m */; };
 		A7F0A5961B7093A50077A1D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F0A5941B7093930077A1D5 /* CoreData.framework */; };
+		A7F0A5CC1B70D3350077A1D5 /* SalesAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A5CB1B70D3350077A1D5 /* SalesAccount.m */; };
+		A7F0A5CD1B70D3350077A1D5 /* SalesAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F0A5CB1B70D3350077A1D5 /* SalesAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		A7F0A5901B705A730077A1D5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		A7F0A5911B705A730077A1D5 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		A7F0A5941B7093930077A1D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A7F0A5CA1B70D3350077A1D5 /* SalesAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesAccount.h; sourceTree = "<group>"; };
+		A7F0A5CB1B70D3350077A1D5 /* SalesAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,8 @@
 		A7EC845C1B6B51E1004D07EF /* Sales */ = {
 			isa = PBXGroup;
 			children = (
+				A7F0A5C91B70D3230077A1D5 /* Model */,
 				A7EC848C1B6B5A9C004D07EF /* Helpers */,
-				A7EC84861B6B5966004D07EF /* Model */,
 				A7EC84871B6B5966004D07EF /* Net */,
 				A7EC84881B6B5966004D07EF /* Views */,
 				A7EC84611B6B51E1004D07EF /* AppDelegate.h */,
@@ -135,13 +139,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A7EC84861B6B5966004D07EF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		A7EC84871B6B5966004D07EF /* Net */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +169,15 @@
 				A7F0A5911B705A730077A1D5 /* UIView+Frame.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A7F0A5C91B70D3230077A1D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0A5CA1B70D3350077A1D5 /* SalesAccount.h */,
+				A7F0A5CB1B70D3350077A1D5 /* SalesAccount.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +284,7 @@
 				A742710A1B6B6F730073C06E /* FieldSpecifier.m in Sources */,
 				A7EC84631B6B51E1004D07EF /* AppDelegate.m in Sources */,
 				A7EC84921B6B5C1B004D07EF /* SalesFieldEditorViewController.m in Sources */,
+				A7F0A5CC1B70D3350077A1D5 /* SalesAccount.m in Sources */,
 				A7EC84601B6B51E1004D07EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +296,7 @@
 				A7F0A5931B705A730077A1D5 /* UIView+Frame.m in Sources */,
 				A7EC847A1B6B51E1004D07EF /* SalesTests.m in Sources */,
 				A742710B1B6B6F730073C06E /* FieldSpecifier.m in Sources */,
+				A7F0A5CD1B70D3350077A1D5 /* SalesAccount.m in Sources */,
 				A74271101B6B779F0073C06E /* FieldSectionSpecifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
