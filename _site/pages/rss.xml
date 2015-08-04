@@ -6,6 +6,254 @@
     <description>凨的地盘</description>
     
       <item>
+<<<<<<< Updated upstream
+=======
+        <title>想你</title>
+        <link>http://liyunf81.github.io/2015/03/21/miss-you.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/21/miss-you.html</guid>
+        <pubDate>Sat, 21 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;曾经的一幕一幕&lt;br /&gt;
+像电影一样一遍一遍的播放着&lt;br /&gt;
+我以为，我忘了&lt;br /&gt;
+忘了，开心，悲伤，&lt;br /&gt;
+忘了，如何面对你的无情&lt;br /&gt;
+我知道，我是爱着你的，&lt;br /&gt;
+我也知道，我真的是深深的爱着你的&lt;br /&gt;
+可是又能怎样？&lt;br /&gt;
+人生其实总是这样，不如意10之八九。&lt;br /&gt;
+还别说这不靠谱的爱情。&lt;/p&gt;
+
+&lt;p&gt;曾经的经历，提醒着我，勇敢的走下去&lt;br /&gt;
+生活好自己，奋斗好自己，&lt;br /&gt;
+做好自己，那么一切都会好起来。&lt;br /&gt;
+让自己更好的成长，这样才能有更好的在等着我。&lt;br /&gt;
+当遇见，才能把握。&lt;/p&gt;
+
+&lt;p&gt;至——- 曾经深爱的你。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>了解C#类-Class</title>
+        <link>http://liyunf81.github.io/2015/03/18/Learn-C%23-class.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/18/Learn-C%23-class.html</guid>
+        <pubDate>Wed, 18 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;在C#中一使用诸如class的关键字词来进行类定义。   &lt;br /&gt;
+申明类&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class CustomClass
+{
+    //类主体,一般会有数据，和行为
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;class 前面的public 为类的访问级别，类的名称为CustomClass&lt;br /&gt;
+下图为C#现存的类型访问控制修饰符&lt;br /&gt;
+&lt;img src=&quot;http://7x2xd3.com1.z0.glb.clouddn.com/class.png&quot; alt=&quot;控制修饰符&quot; /&gt;&lt;br /&gt;
+&amp;gt;当父类和子类在同一个程序集的时候，internal成员为可见，当父类和子类&lt;br /&gt;
+在不同一个程序集的时候，子类不能访问父类的internal成员，但能访问父类的&lt;br /&gt;
+protected internal&lt;br /&gt;
+class 的默认修饰符为internal.&lt;br /&gt;
+sealed:这个是密封类表示此类不能被继承，也就是说它绝对不能作为抽象类使用。&lt;br /&gt;
+partial:可以声明在不同文件中的同一个类。&lt;/p&gt;
+
+&lt;p&gt;创建好了类，使用关键字new创建对象&lt;br /&gt;
+如:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CustomClass customObj = new CustomClass();
+1.CustomClass() 是一个默认的构造函数，
+2.new CustomClass() 创建了对象，并将引用地址返回给customObj.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;类的字段，属性，和索引&lt;br /&gt;
+字段可以理解为，类的变量，常量，用以存储该类实例的相关数据&lt;br /&gt;
+在C++中我们称这些为成员变量。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Date
+{
+    private int _year;
+    private int _month;
+    private int _day;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;大多数情况，字段的修饰符我们都会赋予private,当然也可以使用其他的比如&lt;br /&gt;
+public ，这样在类之外都可以访问(修改，读取)这个字段。但是不建议这样&lt;br /&gt;
+应该通过属性或者方法来访问类中的字段数据。&lt;/p&gt;
+
+&lt;p&gt;属性的任务就是将类的字段数据暴露给类之外，并且可以起到检测和更错的作用。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Date
+{
+    private int _year;
+    private int _month;
+    private int _day;
+
+    public int Year
+    {
+        get 
+        {
+            return _year;
+        }
+
+        set 
+        {
+            _year = value;
+        }
+    }
+
+    public int Month
+    {
+        get
+        {
+            return _month;
+        }
+
+        prvate set 
+        {
+            _month = value;
+        }
+    }
+
+    public int Day
+    {
+        get 
+        {
+            return _day;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;看上面代码，我们定义了三个属性，Year,Month,Day.&lt;br /&gt;
+&amp;gt;Year 为可读可写&lt;br /&gt;
+Month 也是可读可写，但是写只能在类的内部。&lt;br /&gt;
+Day为只读属性&lt;/p&gt;
+
+&lt;p&gt;索引就类似于数组的取值操作。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class MyClass
+{
+    public string this[int index]
+    {
+        get 
+        {
+            return &quot;X&quot; + index.ToString();
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;方法是包含一系列语句的代码块，用于表示类可以有的一系列操作。&lt;br /&gt;
+事件 在发生其他类或者对象关注的事件时，类或对象可通过事件通知告知它们。&lt;/p&gt;
+
+&lt;p&gt;运算符重载&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Chemical
+{
+    ...
+    public static Chemical operator+(Chemical c1,Chemical c2)
+    {
+        ...
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这里的+运算符重载是静态的。&lt;br /&gt;
+比较运算符必须成对出现，也就是说重载了==，必须重载!=。&lt;和&gt;以及&amp;lt;=和&amp;gt;=同样如此。&lt;/和&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;构造函数 每个类都必须有一个构造函数，它用于初始化类实例。其访问级别一般是public。&lt;br /&gt;
+构造函数无返回值，可重载。&lt;br /&gt;
+如果构造函数的访问级别为private.那么就为私有构造函数了。 &lt;br /&gt;
+包含私有构造函数的类，一般只包含静态成员，也就是说，它基本不会实例化对象。&lt;br /&gt;
+私有构造函数的目的，往往是用来阻止利用默认构造函数。&lt;/p&gt;
+
+&lt;p&gt;析构函数&lt;br /&gt;
+析构函数是当对象将从内存中移除时由运行库执行引擎调用的。通常用来释放一些资源。&lt;br /&gt;
+&amp;gt;一个类只能有一个析构函数。&lt;br /&gt;
+无法继承或重载析构函数。&lt;br /&gt;
+无法调用析构函数。&lt;/p&gt;
+
+&lt;p&gt;继承 C#只能从一个类中继承，如果需要进行多类继承，可考虑使用接口继承来间接实现。&lt;br /&gt;
+继承可传递，但是构造函数，和析构函数不能被继承。&lt;/p&gt;
+
+&lt;p&gt;同一个作用域，同一个方法名称，具有不同的参数类型或者参数个数，在调用时，根据&lt;br /&gt;
+参数自动决定使用哪一个方法。这就是方法重载。&lt;/p&gt;
+
+&lt;p&gt;隐藏，下面看下代码：&lt;br /&gt;
+	public class BaseClass&lt;br /&gt;
+	{&lt;br /&gt;
+		public string GetString()&lt;br /&gt;
+		{&lt;br /&gt;
+			return “这是基类的一个方法”;&lt;br /&gt;
+		}&lt;br /&gt;
+	}&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class DerivedClass: BaseClass
+{
+	pubilc new string GetString()
+	{
+		retrun &quot;这是隐藏了基类GetString()的方法&quot;;
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以看出来使用关键字new来做到隐藏基类的方法.&lt;/p&gt;
+
+&lt;p&gt;方法重写，一般作用为多态性。&lt;br /&gt;
+在基类的一个方法前面有virtual，那么此方法为一个虚方法，表示这个方法可以被重写。&lt;br /&gt;
+override 用在派生类中，表示可对基类的虚方法重写。&lt;/p&gt;
+
+&lt;p&gt;当我们队一个问题分析的越深入，发现结构会越来越抽象。当抽象出问题的一个统一方法时，一般会将其放在一个抽象类中，并且将这个方法作为一个虚方法，方便其他子类重写。&lt;br /&gt;
+说道抽象类，那么不得不说下接口。&lt;br /&gt;
+那么什么情况下使用抽象类，什么情况下使用接口呢？&lt;br /&gt;
+接口的目的是提供一个标准给大家使用，可以是在不同类别之间，比如烟花和火箭。他们都有一个发射接口。&lt;br /&gt;
+而抽象的目的是我无法实现它，由继承我的类来实现。那么就要求是同属一个类型。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public abstract class Phone //手机抽象类
+{
+	public abstract void call();
+	public abstract void Photo();
+	public abstract void Net();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;通过这种设计，那么就会要求每一个手机都必须拥有上面的功能。如果我不实现这些，那么这个类就无法创建成功。&lt;br /&gt;
+如果改用接口呢。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public interface PhoneInterface
+{
+	void Call();
+}
+
+public interface PhotoInterface
+{
+	void Photo();
+}
+
+public interface NetInterface
+{
+	void Net();
+}
+
+public class Phone : PhoneInterface
+{
+	...
+}
+
+public class Phone1 : PhotoItnterface,PhoneInterface
+{
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+      </item>
+    
+      <item>
+>>>>>>> Stashed changes
         <title>念</title>
         <link>http://liyunf81.github.io/2015/03/15/own-think.html</link>
         <guid isPermaLink="true">http://liyunf81.github.io/2015/03/15/own-think.html</guid>
@@ -33,6 +281,125 @@
       </item>
     
       <item>
+<<<<<<< Updated upstream
+=======
+        <title>NLP 信念系统笔记</title>
+        <link>http://liyunf81.github.io/2015/03/14/NLP-believes-leran.html</link>
+        <guid isPermaLink="true">http://liyunf81.github.io/2015/03/14/NLP-believes-leran.html</guid>
+        <pubDate>Sat, 14 Mar 2015 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;一个人面对世界的种种事物的处世态度，所依据的正是他的信念系统。&lt;br /&gt;
+一个人的人生是否成功和快乐其实也是由信念系统的运作模式所决定。&lt;br /&gt;
+信念系统可以分成信念，价值，规条。&lt;/p&gt;
+
+&lt;p&gt;信念是”事情应该是怎样”或者”世界就是这样”的主观判断，是我们认为&lt;br /&gt;
+维持世界运作下去的法则，是解释和支持行动或没有行动的理由，是解释&lt;br /&gt;
+和支持变化或没有变化的理由，是对这个世界上个各种关系的主观逻辑定律。&lt;/p&gt;
+
+&lt;p&gt;能够把主观信念和客观真理分开并且认为它们是两回事，便是一个人已经&lt;br /&gt;
+达到一定智慧水平的认证。&lt;/p&gt;
+
+&lt;p&gt;当一个人的原有的一套信念系统不管用了，对于一件事根本不知道情况是&lt;br /&gt;
+怎么一回事，该怎么做。一个人在这样的状态里很容易休克，这可以说是&lt;br /&gt;
+致命的。&lt;/p&gt;
+
+&lt;p&gt;当一个人坚守着一个信念时，是会看不到听不见不符合这个信念的东西的。&lt;/p&gt;
+
+&lt;p&gt;我们对一个人，一件事物，必须有了一些信念，才能知道该怎么行动:行动&lt;br /&gt;
+由信念决定。&lt;/p&gt;
+
+&lt;p&gt;信念绝大部分存在于潜意识里，只有在两种情况下信念会在意识层出现:&lt;br /&gt;
+当信念收到冒犯或者挑战，当这个人自觉的反省。&lt;/p&gt;
+
+&lt;p&gt;信念的种类:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;定义式&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;确定事物之意义，一项事物与另一项事物的意义相同。常见的用词包括&lt;br /&gt;
+xx是yy,即是，等于，就是，便是等。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;因果式&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;一项事物导致另外一项事物产生。可以使明确的(因为你没有来，所以这件事&lt;br /&gt;
+我失败了)，也可以是隐藏的(我很累，不能帮你.)&lt;br /&gt;
+常见的词语包括:引起，使得，迫使，造成，以致，导致，如果，因此，因为，所以&lt;br /&gt;
+终会，终于，结果，将会，只会等&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;规条式&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;事物中的选择受到限制。常常出现在对于人或事的水平能力。&lt;br /&gt;
+常见字包括:能，不能，可以，不可以，可能，不可能，需要，不需要，应该，不应该等&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;判断式&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;事实上所有的信念都是判断。这里包括的可以算是最简单的判断模式，对事物的主观猜测当做&lt;br /&gt;
+必然。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;信念形成的四个途径&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;本人的经验&lt;/li&gt;
+  &lt;li&gt;观察他人的经验&lt;/li&gt;
+  &lt;li&gt;接受信任的人灌输。&lt;/li&gt;
+  &lt;li&gt;自我思考做出总结。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;信念必须有价值观的支持。信念的改变，也需要来自价值观的改变。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;妨碍成长的信念&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使自己失去学习成长机会的信念&lt;/li&gt;
+  &lt;li&gt;使自己留在原地，停歇不前的信念。&lt;/li&gt;
+  &lt;li&gt;减少自己有更多选择的可能性，限制本人能力发挥的信念。&lt;/li&gt;
+  &lt;li&gt;把责任交给其他人，事，物，因而自己无能为力。&lt;/li&gt;
+  &lt;li&gt;把原因归结于一些不能控制的因素，因而不能挑战或者改变。&lt;/li&gt;
+  &lt;li&gt;维持自己一个“没有资格”身份的信念。&lt;br /&gt;
+有这些信念的人，往往都会有说一些冠冕堂皇，比容易辩驳，好像很有道理的虚范语言做挡箭牌。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;我们只要还有生命，我们就有能力，权利，和资格在众多选择中决定自己可以有多么成功快乐。&lt;br /&gt;
+每个人本来就有绝对的权利和能力使自己过得更好。&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;关于身份的局限性信念&lt;/h3&gt;
+&lt;p&gt;一个人最严重的“局限性”信念是关于身份的信念:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1.”能力性”的局限信念，即“我没有能力”。例“我不能放松”解决的方向是认识本有的庞大能力（不了解。。。）&lt;br /&gt;
+  2.“可能性”的局限信念，即“我没有可能……”。例”我这个病是不会好的”解决的方向是看到希望&lt;br /&gt;
+  3.“资格性”的局限信念，即“我没有资格拥有这个东西”。例”我的命生成这样，是应该受苦的。”解决的方向是&lt;br /&gt;
+  他也可以拥有美好的人生。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;什么是价值&lt;/h2&gt;
+
+&lt;p&gt;价值是事情的意义和一个人能够在事情里得到的好处。可以通过提问来了解一件事情对自己的价值&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这个事情里什么最重要？这件事可以给我带来些什么？或者凭这些事情我可以得到些什么？&lt;br /&gt;
+一个人做一件事，不是为了得到一些乐趣，便是为了避开一些痛苦。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+      </item>
+    
+      <item>
+>>>>>>> Stashed changes
         <title>C# 集合选择</title>
         <link>http://liyunf81.github.io/2015/03/13/container-how-choose.html</link>
         <guid isPermaLink="true">http://liyunf81.github.io/2015/03/13/container-how-choose.html</guid>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
+
+<title>了解C#类-Class | 凨</title>
+<meta name="author" content="凨">
+
+  <meta name="keywords" content="C#,Class,类">
+
+
+
+
+<link rel="shortcut icon" href="http://7x2xd3.com1.z0.glb.clouddn.com/favicon.ico" />
+<link rel="stylesheet" href="/assets/pygments.css" />
+
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link href="/pages/rss.xml" rel="alternate" title="凨" type="application/atom+xml">
+
+  </head>
+  <body>
+    <aside id="sidebar">
+  <nav id="tags">
+    <a href="/index.html" id="avatar" style="background-image:url(http://7x2xd3.com1.z0.glb.clouddn.com/my.jpg)"></a>
+
+    <ul id="tags__ul">
+      <li id="pl__all" class="tags__li tags-btn active">所有文章</li>
+       
+        <li id="资源" class="tags__li tags-btn">资源</li>
+       
+        <li id="技术" class="tags__li tags-btn">技术</li>
+       
+        <li id="读书" class="tags__li tags-btn">读书</li>
+       
+        <li id="生活" class="tags__li tags-btn">生活</li>
+      
+    </ul>
+
+    <div id="tags__bottom">
+      <a href="mailto:liyunf81@hotmail.com" id="icon-email" class="tags-btn fontello"></a>
+      <a href="/pages/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
+    </div>
+  </nav> <!-- end #tags -->
+
+  <div id="posts-list">
+    <form action="" id="search-form">
+      <a href="/index.html" id="mobile-avatar" style="background-image:url(http://7x2xd3.com1.z0.glb.clouddn.com/my.jpg)"></a>
+      <!-- NOTE: input field is disabled by default -->
+      <input id="search-input" type="text" placeholder="Search..." />
+    </form>
+
+    <nav id="pl__container">
+    
+      <a class="生活 pl__all" href="/2015/03/21/miss-you.html"><span class="pl__circle"></span><span class="pl__title">想你</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="技术 pl__all" href="/2015/03/18/Learn-C%23-class.html"><span class="pl__circle"></span><span class="pl__title">了解C#类-Class</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="生活 pl__all" href="/2015/03/15/own-think.html"><span class="pl__circle"></span><span class="pl__title">念</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="读书 pl__all" href="/2015/03/14/NLP-believes-leran.html"><span class="pl__circle"></span><span class="pl__title">NLP 信念系统笔记</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="技术 pl__all" href="/2015/03/13/container-how-choose.html"><span class="pl__circle"></span><span class="pl__title">C# 集合选择</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="读书 pl__all" href="/2015/03/13/Boyi-Lesson1.html"><span class="pl__circle"></span><span class="pl__title">耶鲁大学公开课：博弈论，导论笔记</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="技术 pl__all" href="/2015/03/12/useC%23How-work.html"><span class="pl__circle"></span><span class="pl__title">C#使用注意事项</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="读书 pl__all" href="/2015/03/12/stock-begin.html"><span class="pl__circle"></span><span class="pl__title">股票初级知识</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="技术 pl__all" href="/2015/03/11/dataStuct-work.html"><span class="pl__circle"></span><span class="pl__title">C#项目中数据类型的选择</span><span class="pl__date">Mar 2015</span></a>
+    
+      <a class="资源 pl__all" href="/2014/08/03/general-mac-resources.html"><span class="pl__circle"></span><span class="pl__title">Mac 常用资源</span><span class="pl__date">Aug 2014</span></a>
+    
+      <a class="资源 pl__all" href="/2014/01/15/general-svn-resources.html"><span class="pl__circle"></span><span class="pl__title">SVN 常用资源</span><span class="pl__date">Jan 2014</span></a>
+    
+      <a class="资源 pl__all" href="/2014/01/15/general-shell-resources.html"><span class="pl__circle"></span><span class="pl__title">Shell 常用资源</span><span class="pl__date">Jan 2014</span></a>
+    
+      <a class="资源 pl__all" href="/2014/01/15/general-python-resources.html"><span class="pl__circle"></span><span class="pl__title">Python 常用资源</span><span class="pl__date">Jan 2014</span></a>
+    
+      <a class="资源 pl__all" href="/2014/01/15/general-git-resources.html"><span class="pl__circle"></span><span class="pl__title">Git 常用资源</span><span class="pl__date">Jan 2014</span></a>
+    
+    </nav>
+  </div> <!-- end #posts-list -->
+</aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+  <h1 id="post__title" data-identifier="20150318">了解C#类-Class</h1>
+  <p>在C#中一使用诸如class的关键字词来进行类定义。   <br />
+申明类</p>
+
+<pre><code>public class CustomClass
+{
+    //类主体,一般会有数据，和行为
+}
+</code></pre>
+
+<p>class 前面的public 为类的访问级别，类的名称为CustomClass<br />
+下图为C#现存的类型访问控制修饰符<br />
+<img src="http://7x2xd3.com1.z0.glb.clouddn.com/class.png" alt="控制修饰符" /><br />
+&gt;当父类和子类在同一个程序集的时候，internal成员为可见，当父类和子类<br />
+在不同一个程序集的时候，子类不能访问父类的internal成员，但能访问父类的<br />
+protected internal<br />
+class 的默认修饰符为internal.<br />
+sealed:这个是密封类表示此类不能被继承，也就是说它绝对不能作为抽象类使用。<br />
+partial:可以声明在不同文件中的同一个类。</p>
+
+<p>创建好了类，使用关键字new创建对象<br />
+如:</p>
+
+<pre><code>CustomClass customObj = new CustomClass();
+1.CustomClass() 是一个默认的构造函数，
+2.new CustomClass() 创建了对象，并将引用地址返回给customObj.
+</code></pre>
+
+<p>类的字段，属性，和索引<br />
+字段可以理解为，类的变量，常量，用以存储该类实例的相关数据<br />
+在C++中我们称这些为成员变量。</p>
+
+<pre><code>public class Date
+{
+    private int _year;
+    private int _month;
+    private int _day;
+}
+</code></pre>
+
+<p>大多数情况，字段的修饰符我们都会赋予private,当然也可以使用其他的比如<br />
+public ，这样在类之外都可以访问(修改，读取)这个字段。但是不建议这样<br />
+应该通过属性或者方法来访问类中的字段数据。</p>
+
+<p>属性的任务就是将类的字段数据暴露给类之外，并且可以起到检测和更错的作用。</p>
+
+<pre><code>public class Date
+{
+    private int _year;
+    private int _month;
+    private int _day;
+
+    public int Year
+    {
+        get 
+        {
+            return _year;
+        }
+
+        set 
+        {
+            _year = value;
+        }
+    }
+
+    public int Month
+    {
+        get
+        {
+            return _month;
+        }
+
+        prvate set 
+        {
+            _month = value;
+        }
+    }
+
+    public int Day
+    {
+        get 
+        {
+            return _day;
+        }
+    }
+}
+</code></pre>
+
+<p>看上面代码，我们定义了三个属性，Year,Month,Day.<br />
+&gt;Year 为可读可写<br />
+Month 也是可读可写，但是写只能在类的内部。<br />
+Day为只读属性</p>
+
+<p>索引就类似于数组的取值操作。</p>
+
+<pre><code>public class MyClass
+{
+    public string this[int index]
+    {
+        get 
+        {
+            return "X" + index.ToString();
+        }
+    }
+}
+</code></pre>
+
+<p>方法是包含一系列语句的代码块，用于表示类可以有的一系列操作。<br />
+事件 在发生其他类或者对象关注的事件时，类或对象可通过事件通知告知它们。</p>
+
+<p>运算符重载</p>
+
+<pre><code>public class Chemical
+{
+    ...
+    public static Chemical operator+(Chemical c1,Chemical c2)
+    {
+        ...
+    }
+}
+</code></pre>
+
+<blockquote>
+  <p>这里的+运算符重载是静态的。<br />
+比较运算符必须成对出现，也就是说重载了==，必须重载!=。<和>以及&lt;=和&gt;=同样如此。</和></p>
+</blockquote>
+
+<p>构造函数 每个类都必须有一个构造函数，它用于初始化类实例。其访问级别一般是public。<br />
+构造函数无返回值，可重载。<br />
+如果构造函数的访问级别为private.那么就为私有构造函数了。 <br />
+包含私有构造函数的类，一般只包含静态成员，也就是说，它基本不会实例化对象。<br />
+私有构造函数的目的，往往是用来阻止利用默认构造函数。</p>
+
+<p>析构函数<br />
+析构函数是当对象将从内存中移除时由运行库执行引擎调用的。通常用来释放一些资源。<br />
+&gt;一个类只能有一个析构函数。<br />
+无法继承或重载析构函数。<br />
+无法调用析构函数。</p>
+
+<p>继承 C#只能从一个类中继承，如果需要进行多类继承，可考虑使用接口继承来间接实现。<br />
+继承可传递，但是构造函数，和析构函数不能被继承。</p>
+
+<p>同一个作用域，同一个方法名称，具有不同的参数类型或者参数个数，在调用时，根据<br />
+参数自动决定使用哪一个方法。这就是方法重载。</p>
+
+<p>隐藏，下面看下代码：<br />
+	public class BaseClass<br />
+	{<br />
+		public string GetString()<br />
+		{<br />
+			return “这是基类的一个方法”;<br />
+		}<br />
+	}</p>
+
+<pre><code>public class DerivedClass: BaseClass
+{
+	pubilc new string GetString()
+	{
+		retrun "这是隐藏了基类GetString()的方法";
+	}
+}
+</code></pre>
+
+<p>可以看出来使用关键字new来做到隐藏基类的方法.</p>
+
+<p>方法重写，一般作用为多态性。<br />
+在基类的一个方法前面有virtual，那么此方法为一个虚方法，表示这个方法可以被重写。<br />
+override 用在派生类中，表示可对基类的虚方法重写。</p>
+
+<p>当我们队一个问题分析的越深入，发现结构会越来越抽象。当抽象出问题的一个统一方法时，一般会将其放在一个抽象类中，并且将这个方法作为一个虚方法，方便其他子类重写。<br />
+说道抽象类，那么不得不说下接口。<br />
+那么什么情况下使用抽象类，什么情况下使用接口呢？<br />
+接口的目的是提供一个标准给大家使用，可以是在不同类别之间，比如烟花和火箭。他们都有一个发射接口。<br />
+而抽象的目的是我无法实现它，由继承我的类来实现。那么就要求是同属一个类型。</p>
+
+<pre><code>public abstract class Phone //手机抽象类
+{
+	public abstract void call();
+	public abstract void Photo();
+	public abstract void Net();
+}
+</code></pre>
+
+<p>通过这种设计，那么就会要求每一个手机都必须拥有上面的功能。如果我不实现这些，那么这个类就无法创建成功。<br />
+如果改用接口呢。</p>
+
+<pre><code>public interface PhoneInterface
+{
+	void Call();
+}
+
+public interface PhotoInterface
+{
+	void Photo();
+}
+
+public interface NetInterface
+{
+	void Net();
+}
+
+public class Phone : PhoneInterface
+{
+	...
+}
+
+public class Phone1 : PhotoItnterface,PhoneInterface
+{
+	...
+}
+</code></pre>
+
+
+</article> <!-- end #post__content -->
+
+<div id="post__share">
+  <a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://liyunf81.github.io/2015/03/18/Learn-C%23-class.html&text=了解C#类-Class" target="_blank"></a>
+  <a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+  <a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://liyunf81.github.io/2015/03/18/Learn-C%23-class.html&title=了解C#类-Class" target="_blank"></a>
+</div> <!-- end #post__share -->
+<div id="disqus_thread" name="fengya">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
+</div>
+
+
+        <p id="copyright">Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Theme <a href="https://github.com/P233/3-Jekyll" target="_blank">3-Jekyll</a>&nbsp;&nbsp;|&nbsp;&nbsp;Hosted on <a href="https://pages.github.com" target="_blank">Github</a> <a>凨</a></p>
+
+      </div> <!-- end #pjax -->
+
+      <div id="post__toc-trigger">
+        <div id="post__toc">
+          <span id="post__toc-title">Table of Contents</span>
+          <ul id="post__toc-ul"></ul>
+        </div>
+      </div>
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.pjax.js"></script>
+<script src="/assets/js/nprogress.js"></script>
+<script src="/assets/js/script.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-60587110-1', 'fengyalife.com');
+  ga('send', 'pageview');
+</script>
+  </body>
+</html>
