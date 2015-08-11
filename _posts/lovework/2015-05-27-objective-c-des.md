@@ -1,10 +1,11 @@
 ---
-layout: _post
+layout: post
 title: Objective-C 简介
 category:技术
 tags:ios
 keywords:ios,Objective-C,
 description:
+
 ---
 
   Objective-C 是一个非常简单的计算机语言，在C语言的基础上扩展了面向对象编程。它提供了类的定义，协议，代理等。类的语法和设计主要基于Smalltalk，它是最早的面向对象编程语言之一。
