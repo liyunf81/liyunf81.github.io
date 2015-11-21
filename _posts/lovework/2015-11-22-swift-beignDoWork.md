@@ -14,7 +14,7 @@ description:
 磕磕盼盼的走了过来，最后还是发现好好把技术打磨，也是算一个不太坏的出路。废话不多说，开始正题。
 项目的构架采用了前人的轮子和自己的一点点经验。
 
-* ui层采用 MMVC (使用ReactiveCocoa来作为事件传递)
+* UI层采用 MMVM (使用ReactiveCocoa来作为事件传递)
 * 网络层采用Alamofire：它是AFNetworking库作者在swfit中的实现
 * 数据缓存则采用sqlite，和基本的userdefults,当然这个的自己封装
 * 至于发布和部署之类的还太早，经验也有限，做到哪一步在考虑。
